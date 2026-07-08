@@ -26,6 +26,13 @@ export const FEAST_OFFSETS = {
   holyFriday: -2,
   holySaturday: -1,
 
+  //Sundays of great lent
+  sundayOfOrthodoxy: -42,      // 1st Sunday of Lent
+  sundayOfGregoryPalamas: -35, // 2nd Sunday
+  sundayOfTheCross: -28,       // 3rd Sunday (Veneration of the Cross)
+  sundayOfJohnClimacus: -21,   // 4th Sunday
+  sundayOfMaryOfEgypt: -14,    // 5th Sunday
+
   // Pascha itself
   paschaDay: 0,
 
