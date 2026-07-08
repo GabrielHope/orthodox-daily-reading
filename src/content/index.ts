@@ -7,7 +7,9 @@ import { sundayOfOrthodoxyScripture } from './scripture/sunday-of-orthodoxy-john
 import { sundayOfOrthodoxyWisdom } from './wisdom/nicaea-ii-on-icons';
 import { gregoryPalamasScripture } from './scripture/sunday-of-gregory-palamas-mark-2-1-12';
 import { gregoryPalamasFeast } from './saints/sunday-of-gregory-palamas';
-
+import { lazarusSaturday } from './saints/lazarus-saturday';
+import { lazarusSaturdayScripture } from './scripture/lazarus-saturday-john-11-1-45';
+import { chrysostomOnLazarus } from './wisdom/chrysostom-on-lazarus';
 
 export const allSaints: Saint[] = [annunciationFeast];
 export const allScripture: ScriptureReading[] = [annunciationScripture];
