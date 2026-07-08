@@ -5,6 +5,8 @@ import { annunciationWisdom } from './wisdom/athanasius-on-incarnation-idolatry'
 import { sundayOfOrthodoxyFeast } from './saints/sunday-of-orthodoxy';
 import { sundayOfOrthodoxyScripture } from './scripture/sunday-of-orthodoxy-john-1-43-51';
 import { sundayOfOrthodoxyWisdom } from './wisdom/nicaea-ii-on-icons';
+import { gregoryPalamasScripture } from './scripture/sunday-of-gregory-palamas-mark-2-1-12';
+import { gregoryPalamasFeast } from './saints/sunday-of-gregory-palamas';
 
 
 export const allSaints: Saint[] = [annunciationFeast];
