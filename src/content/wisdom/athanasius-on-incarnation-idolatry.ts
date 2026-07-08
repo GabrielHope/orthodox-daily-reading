@@ -3,6 +3,7 @@ import type { WisdomQuote } from '@/lib/content/types';
 export const annunciationWisdom: WisdomQuote = {
   id: 'athanasius-on-incarnation-idolatry',
   author: 'St. Athanasius the Great',
+  fixedDatekey: '03-25',
   sourceCitation: 'On the Incarnation, Ch. 4 (NPNF Second Series, Vol. 4, trans. Archibald Robertson, 1892)',
   quote: {
     short: 'Men turned away from God and fashioned idols for themselves in place of the truth, "worshipping the creature rather than the Creator."',

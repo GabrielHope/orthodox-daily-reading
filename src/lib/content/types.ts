@@ -35,6 +35,8 @@ export interface WisdomQuote {
   sourceCitation: string;       // e.g. "Homily 15 on Matthew, NPNF1 Vol. 10"
   quote: LengthTiers;
   sourceAttribution: string;    // e.g. "Public domain, CCEL - Nicene and Post-Nicene Fathers"
+  fixedDatekey?: string;
+  moveableFeast: string;
 }
 
 export interface DailyComposition {

@@ -19,9 +19,10 @@ export function getDailyContent(date: Date, calendarMode: CalendarMode): DailyCo
     (s) => s.fixedDateKey === resolved.fixedDateKey || s.moveableFeast === resolved.moveableFeast
   );
 
-  // For now, just grab the first wisdom quote if a saint/feast matched.
-  // Later this can get smarter (e.g. rotate quotes, match by author to commemorated saint).
-  const wisdom = saints.length > 0 ? allWisdom[0] ?? null : null;
+  const wisdom = allWisdom.find(
+    (w) => w.fixedDateKey === resolved.fixedDateKey || w.moveableFeast === resolved.moveableFeast
+  ) ?? null;
+
 
   return { date, calendarMode, saints, scripture, wisdom };
 }

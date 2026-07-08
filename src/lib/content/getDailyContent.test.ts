@@ -11,3 +11,7 @@ console.log('New Calendar result:', newCal.saints[0]?.name, '|', newCal.scriptur
 // Sanity check: a random unrelated day should return nothing
 const emptyDay = getDailyContent(new Date('2027-06-15T00:00:00Z'), 'old');
 console.log('Unrelated day saints found:', emptyDay.saints.length); // should be 0
+
+// Gregory Palamas Sunday 2027: has a saint + scripture, but NO wisdom quote yet
+const palamas2027 = getDailyContent(new Date('2027-03-15T00:00:00Z'), 'old');
+console.log('Gregory Palamas wisdom (should be null):', palamas2027.wisdom);
