@@ -10,6 +10,7 @@ import { palmSundayFeast } from './saints/palm-sunday';
 import { holyThursdayFeast } from './saints/holy-thursday';
 import { holySaturdayFeast } from './saints/holy-saturday';
 import { holyFridayFeast } from './saints/holy-friday';
+import { paschaFeast } from './saints/pascha';
 
 // Scripture
 import { annunciationScripture } from './scripture/annunciation-luke-1-26-38';
@@ -21,6 +22,7 @@ import { palmSundayScripture } from './scripture/palm-sunday-john-12-1-18';
 import { holyThursdayScripture } from './scripture/holy-thursday-john-13-1-17';
 import { holySaturdayScripture } from './scripture/holy-saturday-matthew-28-1-20';
 import { holyFridayScripture } from './scripture/holy-friday-john-19-16-30';
+import { paschaScripture } from './scripture/pascha-john-1-1-17';
 
 // Wisdom
 import { annunciationWisdom } from './wisdom/athanasius-on-incarnation-idolatry';
