@@ -15,3 +15,9 @@ console.log('Unrelated day saints found:', emptyDay.saints.length); // should be
 // Gregory Palamas Sunday 2027: has a saint + scripture, but NO wisdom quote yet
 const palamas2027 = getDailyContent(new Date('2027-03-15T00:00:00Z'), 'old');
 console.log('Gregory Palamas wisdom (should be null):', palamas2027.wisdom);
+
+// Tuesday of Week 1, Lent, 2027: Clean Monday was March 2 (Julian) = offset -48,
+// so Clean Tuesday = offset -47
+const week1Tuesday2027 = getDailyContent(new Date('2027-03-03T00:00:00Z'), 'old');
+console.log('Week 1 Tuesday scripture count (should be 3 once added):', week1Tuesday2027.scripture.length);
+console.log('Week 1 Tuesday saint (should be David of Wales):', week1Tuesday2027.saints[0]?.name);

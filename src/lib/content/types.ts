@@ -16,6 +16,7 @@ export interface Saint {
   name: string;                // e.g. "St. Gregory Palamas, Archbishop of Thessalonica"
   fixedDateKey?: string;       // Julian "MM-DD", if this is a fixed commemoration
   moveableFeast?: string;      // key from FEAST_OFFSETS, if tied to Pascha (rare for saints, common for feast-linked commemorations)
+  paschaOffset?: number;
   bio: LengthTiers;
   sourceAttribution: string;   // e.g. "Adapted from public-domain Synaxaristes; see also OrthodoxWiki (CC-BY-SA)"
 }
@@ -27,6 +28,7 @@ export interface ScriptureReading {
   fullText: string;             // the actual passage text
   fixedDateKey?: string;
   moveableFeast?: string;
+  paschaOffset?: number;
 }
 
 export interface WisdomQuote {
@@ -37,6 +39,7 @@ export interface WisdomQuote {
   sourceAttribution: string;    // e.g. "Public domain, CCEL - Nicene and Post-Nicene Fathers"
   fixedDateKey?: string;
   moveableFeast?: string;
+  paschaOffset?: number;
 }
 
 export interface DailyComposition {

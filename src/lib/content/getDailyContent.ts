@@ -13,16 +13,23 @@ export function getDailyContent(date: Date, calendarMode: CalendarMode): DailyCo
   const resolved = resolveLiturgicalDay(date, calendarMode);
 
   const saints = allSaints.filter(
-    (s) => s.fixedDateKey === resolved.fixedDateKey || s.moveableFeast === resolved.moveableFeast
+    (s) =>
+      s.fixedDateKey === resolved.fixedDateKey ||
+      s.moveableFeast === resolved.moveableFeast ||
+      s.paschaOffset === resolved.offsetFromPascha
   );
   const scripture = allScripture.filter(
-    (s) => s.fixedDateKey === resolved.fixedDateKey || s.moveableFeast === resolved.moveableFeast
+    (s) =>
+      s.fixedDateKey === resolved.fixedDateKey ||
+      s.moveableFeast === resolved.moveableFeast ||
+      s.paschaOffset === resolved.offsetFromPascha
   );
-
   const wisdom = allWisdom.find(
-    (w) => w.fixedDateKey === resolved.fixedDateKey || w.moveableFeast === resolved.moveableFeast
+    (w) =>
+      w.fixedDateKey === resolved.fixedDateKey ||
+      w.moveableFeast === resolved.moveableFeast ||
+      w.paschaOffset === resolved.offsetFromPascha
   ) ?? null;
-
 
   return { date, calendarMode, saints, scripture, wisdom };
 }
