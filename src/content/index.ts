@@ -11,6 +11,7 @@ import { holyThursdayFeast } from './saints/holy-thursday';
 import { holySaturdayFeast } from './saints/holy-saturday';
 import { holyFridayFeast } from './saints/holy-friday';
 import { paschaFeast } from './saints/pascha';
+import { davidOfWales } from './saints/david-of-wales';
 
 // Scripture
 import { annunciationScripture } from './scripture/annunciation-luke-1-26-38';
@@ -23,6 +24,9 @@ import { holyThursdayScripture } from './scripture/holy-thursday-john-13-1-17';
 import { holySaturdayScripture } from './scripture/holy-saturday-matthew-28-1-20';
 import { holyFridayScripture } from './scripture/holy-friday-john-19-16-30';
 import { paschaScripture } from './scripture/pascha-john-1-1-17';
+import { week1TuesdayGenesis } from './scripture/week1-tuesday-genesis';
+import { week1TuesdayIsaiah } from './scripture/week1-tuesday-isaiah';
+import { week1TuesdayProverbs } from './scripture/week1-tuesday-proverbs';
 
 // Wisdom
 import { annunciationWisdom } from './wisdom/athanasius-on-incarnation-idolatry';
