@@ -12,6 +12,9 @@ import { holyFridayFeast } from './saints/holy-friday';
 import { holySaturdayFeast } from './saints/holy-saturday';
 import { paschaFeast } from './saints/pascha';
 import { davidOfWales } from './saints/david-of-wales';
+import { adrianOfPoshekhonye } from './saints/adrian-of-poshekhonye';
+import { fortyTwoMartyrsOfAmorium } from './saints/forty-two-martyrs-of-amorium';
+import { jamesTheFaster } from './saints/james-the-faster';
 
 // Scripture
 import { annunciationScripture } from './scripture/annunciation-luke-1-26-38';
@@ -27,6 +30,15 @@ import { paschaScripture } from './scripture/pascha-john-1-1-17';
 import { week1TuesdayIsaiah } from './scripture/week1-tuesday-isaiah';
 import { week1TuesdayGenesis } from './scripture/week1-tuesday-genesis';
 import { week1TuesdayProverbs } from './scripture/week1-tuesday-proverbs';
+import { week1WednesdayGenesis } from './scripture/week1-wednesday-genesis';
+import { week1WednesdayIsaiah } from './scripture/week1-wednesday-isaiah';
+import { week1WednesdayProverbs } from './scripture/week1-wednesday-proverbs';
+import { week1ThursdayGenesis } from './scripture/week1-thursday-genesis'; 
+import { week1ThursdayIsaiah } from './scripture/week1-thursday-isaiah'; 
+import { week1ThursdayProverbs } from './scripture/week1-thursday-proverbs';
+import { week1FridayGenesis } from './scripture/week1-friday-genesis';
+import { week1FridayIsaiah } from './scripture/week1-friday-isaiah';
+import { week1FridayProverbs } from './scripture/week1-friday-proverbs';
 
 // Wisdom
 import { annunciationWisdom } from './wisdom/athanasius-on-incarnation-idolatry';
@@ -48,6 +60,8 @@ export const allSaints: Saint[] = [
   holySaturdayFeast,
   paschaFeast,
   davidOfWales,
+  adrianOfPoshekhonye,
+  fortyTwoMartyrsOfAmorium,
 ];
 
 export const allScripture: ScriptureReading[] = [
@@ -64,6 +78,12 @@ export const allScripture: ScriptureReading[] = [
   week1TuesdayIsaiah,
   week1TuesdayGenesis,
   week1TuesdayProverbs,
+  week1WednesdayIsaiah,
+  week1WednesdayGenesis,
+  week1WednesdayProverbs,
+  week1FridayIsaiah,
+  week1FridayGenesis,
+  week1FridayProverbs,
 ];
 
 export const allWisdom: WisdomQuote[] = [
