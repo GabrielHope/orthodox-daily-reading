@@ -8,8 +8,8 @@ import { sundayOfTheCrossFeast } from './saints/sunday-of-the-cross';
 import { lazarusSaturday } from './saints/lazarus-saturday';
 import { palmSundayFeast } from './saints/palm-sunday';
 import { holyThursdayFeast } from './saints/holy-thursday';
-import { holySaturdayFeast } from './saints/holy-saturday';
 import { holyFridayFeast } from './saints/holy-friday';
+import { holySaturdayFeast } from './saints/holy-saturday';
 import { paschaFeast } from './saints/pascha';
 import { davidOfWales } from './saints/david-of-wales';
 
@@ -21,11 +21,11 @@ import { sundayOfTheCrossScripture } from './scripture/sunday-of-the-cross-mark-
 import { lazarusSaturdayScripture } from './scripture/lazarus-saturday-john-11-1-45';
 import { palmSundayScripture } from './scripture/palm-sunday-john-12-1-18';
 import { holyThursdayScripture } from './scripture/holy-thursday-john-13-1-17';
-import { holySaturdayScripture } from './scripture/holy-saturday-matthew-28-1-20';
 import { holyFridayScripture } from './scripture/holy-friday-john-19-16-30';
+import { holySaturdayScripture } from './scripture/holy-saturday-matthew-28-1-20';
 import { paschaScripture } from './scripture/pascha-john-1-1-17';
-import { week1TuesdayGenesis } from './scripture/week1-tuesday-genesis';
 import { week1TuesdayIsaiah } from './scripture/week1-tuesday-isaiah';
+import { week1TuesdayGenesis } from './scripture/week1-tuesday-genesis';
 import { week1TuesdayProverbs } from './scripture/week1-tuesday-proverbs';
 
 // Wisdom
@@ -35,7 +35,6 @@ import { sundayOfTheCrossWisdom } from './wisdom/chrysostom-power-of-cross';
 import { chrysostomOnLazarus } from './wisdom/chrysostom-on-lazarus';
 import { palmSundayWisdom } from './wisdom/chrysostom-on-palm-sunday';
 import { holyThursdayWisdom } from './wisdom/chrysostom-on-last-supper';
-// Note: no wisdom entry exists yet for Gregory Palamas Sunday — intentionally omitted (see prior discussion)
 
 export const allSaints: Saint[] = [
   annunciationFeast,
@@ -45,6 +44,10 @@ export const allSaints: Saint[] = [
   lazarusSaturday,
   palmSundayFeast,
   holyThursdayFeast,
+  holyFridayFeast,
+  holySaturdayFeast,
+  paschaFeast,
+  davidOfWales,
 ];
 
 export const allScripture: ScriptureReading[] = [
@@ -55,6 +58,12 @@ export const allScripture: ScriptureReading[] = [
   lazarusSaturdayScripture,
   palmSundayScripture,
   holyThursdayScripture,
+  holyFridayScripture,
+  holySaturdayScripture,
+  paschaScripture,
+  week1TuesdayIsaiah,
+  week1TuesdayGenesis,
+  week1TuesdayProverbs,
 ];
 
 export const allWisdom: WisdomQuote[] = [

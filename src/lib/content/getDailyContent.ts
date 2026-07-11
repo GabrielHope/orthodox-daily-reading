@@ -1,5 +1,6 @@
 import { resolveLiturgicalDay, type CalendarMode } from '@/lib/calendar/resolveLiturgicalDay';
 import { allSaints, allScripture, allWisdom } from '@/content';
+import { WEEKDAY_THEMES, type WeekdayTheme } from '@/content/weekdayThemes';
 
 export interface DailyContent {
   date: Date;
@@ -7,6 +8,7 @@ export interface DailyContent {
   saints: typeof allSaints;
   scripture: typeof allScripture;
   wisdom: typeof allWisdom[number] | null;
+  weekdayTheme: WeekdayTheme;
 }
 
 export function getDailyContent(date: Date, calendarMode: CalendarMode): DailyContent {
@@ -31,5 +33,8 @@ export function getDailyContent(date: Date, calendarMode: CalendarMode): DailyCo
       w.paschaOffset === resolved.offsetFromPascha
   ) ?? null;
 
-  return { date, calendarMode, saints, scripture, wisdom };
+  const dayOfWeek = resolved.julianDate.getUTCDay();
+  const weekdayTheme = WEEKDAY_THEMES[dayOfWeek];
+
+  return { date, calendarMode, saints, scripture, wisdom, weekdayTheme };
 }

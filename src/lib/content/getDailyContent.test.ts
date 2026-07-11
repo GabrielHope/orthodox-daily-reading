@@ -21,3 +21,7 @@ console.log('Gregory Palamas wisdom (should be null):', palamas2027.wisdom);
 const week1Tuesday2027 = getDailyContent(new Date('2027-03-03T00:00:00Z'), 'old');
 console.log('Week 1 Tuesday scripture count (should be 3 once added):', week1Tuesday2027.scripture.length);
 console.log('Week 1 Tuesday saint (should be David of Wales):', week1Tuesday2027.saints[0]?.name);
+
+// Clean Tuesday 2027 (Julian March 3) should show the Tuesday theme: St. John the Forerunner
+const cleanTuesday2027 = getDailyContent(new Date('2027-03-03T00:00:00Z'), 'old');
+console.log('Clean Tuesday weekday theme (should be St. John the Forerunner):', cleanTuesday2027.weekdayTheme.name);
