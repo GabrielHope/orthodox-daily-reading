@@ -33,6 +33,8 @@ export const FEAST_OFFSETS = {
   sundayOfJohnClimacus: -21,   // 4th Sunday
   sundayOfMaryOfEgypt: -14,    // 5th Sunday
 
+  theodoreTyroSaturday: -43,   // Saturday of Week 1: Miracle of Kolyva, St. Theodore the Recruit
+
   // Pascha itself
   paschaDay: 0,
 

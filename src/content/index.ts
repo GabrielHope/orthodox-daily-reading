@@ -15,6 +15,7 @@ import { davidOfWales } from './saints/david-of-wales';
 import { adrianOfPoshekhonye } from './saints/adrian-of-poshekhonye';
 import { fortyTwoMartyrsOfAmorium } from './saints/forty-two-martyrs-of-amorium';
 import { jamesTheFaster } from './saints/james-the-faster';
+import { theodoreTyroSaturday } from './saints/theodore-tyro-saturday';
 
 // Scripture
 import { annunciationScripture } from './scripture/annunciation-luke-1-26-38';
@@ -39,6 +40,7 @@ import { week1ThursdayProverbs } from './scripture/week1-thursday-proverbs';
 import { week1FridayGenesis } from './scripture/week1-friday-genesis';
 import { week1FridayIsaiah } from './scripture/week1-friday-isaiah';
 import { week1FridayProverbs } from './scripture/week1-friday-proverbs';
+import { theodoreTyroHebrewsMark } from './scripture/theodore-tyro-hebrews-mark';
 
 // Wisdom
 import { annunciationWisdom } from './wisdom/athanasius-on-incarnation-idolatry';
