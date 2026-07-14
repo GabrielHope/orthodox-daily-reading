@@ -16,6 +16,7 @@ import { adrianOfPoshekhonye } from './saints/adrian-of-poshekhonye';
 import { fortyTwoMartyrsOfAmorium } from './saints/forty-two-martyrs-of-amorium';
 import { jamesTheFaster } from './saints/james-the-faster';
 import { theodoreTyroSaturday } from './saints/theodore-tyro-saturday';
+import { cleanMonday } from './saints/clean-monday';
 
 // Scripture
 import { annunciationScripture } from './scripture/annunciation-luke-1-26-38';
@@ -41,6 +42,9 @@ import { week1FridayGenesis } from './scripture/week1-friday-genesis';
 import { week1FridayIsaiah } from './scripture/week1-friday-isaiah';
 import { week1FridayProverbs } from './scripture/week1-friday-proverbs';
 import { theodoreTyroHebrewsMark } from './scripture/theodore-tyro-hebrews-mark';
+import { week1MondayGenesis } from './scripture/week1-monday-genesis';
+import { week1MondayIsaiah } from './scripture/week1-monday-isaiah';
+import { week1MondayProverbs } from './scripture/week1-monday-proverbs';
 
 // Wisdom
 import { annunciationWisdom } from './wisdom/athanasius-on-incarnation-idolatry';
@@ -64,6 +68,7 @@ export const allSaints: Saint[] = [
   davidOfWales,
   adrianOfPoshekhonye,
   fortyTwoMartyrsOfAmorium,
+  cleanMonday,
 ];
 
 export const allScripture: ScriptureReading[] = [
@@ -77,12 +82,18 @@ export const allScripture: ScriptureReading[] = [
   holyFridayScripture,
   holySaturdayScripture,
   paschaScripture,
+  week1MondayGenesis,
+  week1MondayIsaiah,
+  week1MondayProverbs,
   week1TuesdayIsaiah,
   week1TuesdayGenesis,
   week1TuesdayProverbs,
   week1WednesdayIsaiah,
   week1WednesdayGenesis,
   week1WednesdayProverbs,
+  week1ThursdayIsaiah,
+  week1ThursdayGenesis,
+  week1ThursdayProverbs,
   week1FridayIsaiah,
   week1FridayGenesis,
   week1FridayProverbs,
