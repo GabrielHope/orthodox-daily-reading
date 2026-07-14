@@ -17,6 +17,7 @@ export interface Saint {
   fixedDateKey?: string;       // Julian "MM-DD", if this is a fixed commemoration
   moveableFeast?: string;      // key from FEAST_OFFSETS, if tied to Pascha (rare for saints, common for feast-linked commemorations)
   paschaOffset?: number;
+  tier: 'headline' | 'full';
   bio: LengthTiers;
   sourceAttribution: string;   // e.g. "Adapted from public-domain Synaxaristes; see also OrthodoxWiki (CC-BY-SA)"
 }
@@ -29,6 +30,8 @@ export interface ScriptureReading {
   fixedDateKey?: string;
   moveableFeast?: string;
   paschaOffset?: number;
+  tier: 'core' | 'full';   
+  service?: string;
 }
 
 export interface WisdomQuote {

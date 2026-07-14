@@ -7,8 +7,10 @@ import { julianToGregorian } from '@/lib/calendar/julian';
 export interface DailyContent {
   date: Date;
   calendarMode: CalendarMode;
-  saints: typeof allSaints;
-  scripture: typeof allScripture;
+  headlineSaints: typeof allSaints;
+  allSaintsToday: typeof allSaints;
+  coreScripture: typeof allScripture;
+  allScriptureToday: typeof allScripture;
   wisdom: typeof allWisdom[number] | null;
   weekdayTheme: WeekdayTheme;
 }
@@ -16,27 +18,20 @@ export interface DailyContent {
 export function getDailyContent(date: Date, calendarMode: CalendarMode): DailyContent {
   const resolved = resolveLiturgicalDay(date, calendarMode);
 
-  const saints = allSaints.filter(
-    (s) =>
-      s.fixedDateKey === resolved.fixedDateKey ||
-      s.moveableFeast === resolved.moveableFeast ||
-      s.paschaOffset === resolved.offsetFromPascha
-  );
-  const scripture = allScripture.filter(
-    (s) =>
-      s.fixedDateKey === resolved.fixedDateKey ||
-      s.moveableFeast === resolved.moveableFeast ||
-      s.paschaOffset === resolved.offsetFromPascha
-  );
-  const wisdom = allWisdom.find(
-    (w) =>
-      w.fixedDateKey === resolved.fixedDateKey ||
-      w.moveableFeast === resolved.moveableFeast ||
-      w.paschaOffset === resolved.offsetFromPascha
-  ) ?? null;
+  const matchesDay = (item: { fixedDateKey?: string; moveableFeast?: string; paschaOffset?: number }) =>
+    item.fixedDateKey === resolved.fixedDateKey ||
+    item.moveableFeast === resolved.moveableFeast ||
+    item.paschaOffset === resolved.offsetFromPascha;
 
+  const allSaintsToday = allSaints.filter(matchesDay);
+  const headlineSaints = allSaintsToday.filter((s) => s.tier === 'headline');
+
+  const allScriptureToday = allScripture.filter(matchesDay);
+  const coreScripture = allScriptureToday.filter((s) => s.tier === 'core');
+
+  const wisdom = allWisdom.find(matchesDay) ?? null;
   const dayOfWeek = julianToGregorian(resolved.julianDate).getUTCDay();
   const weekdayTheme = WEEKDAY_THEMES[dayOfWeek];
 
-  return { date, calendarMode, saints, scripture, wisdom, weekdayTheme };
+  return { date, calendarMode, headlineSaints, allSaintsToday, coreScripture, allScriptureToday, wisdom, weekdayTheme };
 }
